@@ -1,0 +1,49 @@
+system_design_task:
+  description: >
+    Define the overall system architecture for the project, including
+    the folder structure, dependencies, and technology stack.
+    Ensure the architecture is modular, scalable, and adheres to best practices.
+  expected_output: >
+    A detailed project blueprint, including:
+    - Folder structure
+    - Chosen tech stack with justifications
+    - API design (if applicable)
+    - Database schema (if applicable)
+  agent: SystemDesigner
+
+
+coding_task:
+  description: >
+    Implement the core functionality of the application based on the system
+    architecture. Follow clean coding practices, write modular and reusable code,
+    and ensure efficiency in logic and performance.
+  expected_output: >
+    - Fully functional Python scripts with proper structure
+    - Well-commented and readable code
+    - Unit tests for core functionalities
+  agent: Coder
+
+
+debugging_task:
+  description: >
+    Test the implemented code for potential errors, performance bottlenecks, 
+    and security vulnerabilities. Provide a comprehensive report on 
+    identified issues along with recommended fixes.
+  expected_output: >
+    - A list of identified bugs and vulnerabilities
+    - Optimized and corrected code with explanations
+    - Performance benchmarks and suggestions for improvement
+  agent: Debugger
+
+
+output_task:
+  description: >
+    Compile all completed work, including the system architecture, 
+    implemented code, and debugging reports. Ensure all components 
+    function correctly and are ready for deployment or further 
+    development.
+  expected_output: >
+    - A structured project repository with finalized code
+    - A summary report detailing the architecture, key components, and testing results
+    - Documentation on how to run and maintain the project
+  agent: SystemDesigner
